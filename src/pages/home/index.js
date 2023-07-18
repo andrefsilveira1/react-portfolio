@@ -5,8 +5,8 @@ export default function LandPage() {
   return (
     <div className="bg-gray-900 text-white min-h-screen font-roboto grid justify-items-center">
         <div className="bg-black min-h-screen text-white w-3/4">
+            <HomeHeader/>
         </div>
-        <HomeHeader/>
         {/* This content will provied a menu bar with my logo photo */}
       <div className="container mx-auto p-8">
         <section className="mb-12">
