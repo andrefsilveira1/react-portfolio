@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Menu.css';
+import './index.css';
 
 const Menu = ({ anchors }) => {
   const [activeSection, setActiveSection] = useState(anchors[0].id);

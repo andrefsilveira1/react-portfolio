@@ -1,9 +1,12 @@
 import React from "react";
 import HomeHeader from "../../components/header";
 import "./index.css";
+import Menu from "../../components/nav";
 
 export default function LandPage() {
   return (
+    <>
+    <Menu/>
     <div className="bg-gray-900 text-white min-h-screen font-roboto grid justify-items-center">
         <div className="bg-black min-h-screen text-white w-3/4">
             <HomeHeader className="menu"/>
@@ -81,6 +84,7 @@ export default function LandPage() {
         <p> Create new footer here!</p>
       </div>
     </div>
+    </>
   );
 };
 
