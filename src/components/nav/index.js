@@ -3,6 +3,7 @@ import './index.css';
 
 const Menu = ({ anchors }) => {
   const [activeSection, setActiveSection] = useState(anchors[0].id);
+  console.log("ANCHORS:", anchors[0].id)
 
   useEffect(() => {
     const handleScroll = () => {

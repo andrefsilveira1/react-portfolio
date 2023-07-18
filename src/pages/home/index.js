@@ -1,12 +1,52 @@
-import React from "react";
+import React, { useEffect, useState , useMemo} from 'react';
 import HomeHeader from "../../components/header";
 import "./index.css";
-import Menu from "../../components/nav";
 
 export default function LandPage() {
+
+const anchors = [
+    { id: 'section1', label: 'Seção 1' },
+    { id: 'section2', label: 'Seção 2' },
+    { id: 'section3', label: 'Seção 3' },
+    { id: 'section4', label: 'Seção 4' },
+    ];
+    const [activeSection, setActiveSection] = useState(anchors[0].id);
+    const anchorIds = useMemo(() => anchors.map(anchor => anchor.id), [anchors]);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const sections = anchorIds.map(id => document.getElementById(id));
+        let currentSection = '';
+  
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+  
+          if (window.pageYOffset >= sectionTop - sectionHeight / 2) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+  
+        setActiveSection(currentSection);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [anchorIds]);
   return (
     <>
-    <Menu/>
+    <nav className="menu">
+      <ul>
+        {anchors.map((anchor) => (
+          <li key={anchor.id} className={activeSection === anchor.id ? 'active' : ''}>
+            <a href={`#${anchor.id}`}>{anchor.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
     <div className="bg-gray-900 text-white min-h-screen font-roboto grid justify-items-center">
         <div className="bg-black min-h-screen text-white w-3/4">
             <HomeHeader className="menu"/>
@@ -19,7 +59,7 @@ export default function LandPage() {
           </p>
         </section>
 
-        <section className="mb-12">
+        <section className="section1 mb-12" id="section1">
           <h2 className="text-3xl font-bold mb-4">Skills</h2>
           <ul className="list-disc pl-6">
             <li>HTML5</li>
@@ -31,7 +71,7 @@ export default function LandPage() {
           </ul>
         </section>
 
-        <section className="mb-12">
+        <section className="mb-12" id="section2">
           <h2 className="text-3xl font-bold mb-4">Projects</h2>
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-blue-700 p-4 rounded">
@@ -53,7 +93,7 @@ export default function LandPage() {
           </div>
         </section>
 
-        <section className="mb-12">
+        <section className="mb-12" id="section3">
           <h2 className="text-3xl font-bold mb-4">Projects</h2>
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-blue-700 p-4 rounded">
@@ -75,7 +115,7 @@ export default function LandPage() {
           </div>
         </section>
 
-        <section>
+        <section id="section5">
           <h2 className="text-3xl font-bold mb-4">Contact</h2>
           <p className="text-lg">Feel free to reach out to me at freitasandre38@gmail.com</p>
         </section>
