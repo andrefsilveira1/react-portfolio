@@ -17,9 +17,6 @@ export default function HomeHeader() {
         <a href="https://www.linkedin.com/in/andr%C3%A9-freitas-b59964208/" rel="noreferrer" target='_blank' className="menu-item "><FaLinkedin size={80} /></a>
         <a href="https://www.instagram.com/andre_freitas_1/" className="menu-item" rel="noreferrer" target='_blank'> <FaInstagram size={80} /> </a>
         </nav>
-      <section>
-        <h1> Create new content here</h1>
-      </section>
     </>
   );
 }
