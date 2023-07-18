@@ -7,7 +7,6 @@ export default function LandPage() {
         <div className="bg-black min-h-screen text-white w-3/4">
             <HomeHeader/>
         </div>
-        {/* This content will provied a menu bar with my logo photo */}
       <div className="container mx-auto p-8">
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>

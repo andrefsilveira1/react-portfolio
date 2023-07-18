@@ -1,12 +1,11 @@
+import Nav from "./components/nav";
 import LandPage from "./pages/home";
 
 
 function App() {
   return (
     <div className="App">
-      <h1>
-        DEVELOPER
-      </h1>
+      <Nav/>
       <LandPage/>
     </div>
   );
