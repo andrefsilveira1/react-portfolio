@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <div className="flex justify-center">
       <Nav/>
-      <div className="App">
+      <div className="App bg-gray-900 text-white">
           <LandPage />
           <Skills/>
       </div>
