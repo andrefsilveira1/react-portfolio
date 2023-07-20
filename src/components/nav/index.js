@@ -1,45 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import './index.css';
+import React from 'react';
+import { BrowserRouter } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
-const Menu = ({ anchors }) => {
-  const [activeSection, setActiveSection] = useState(anchors[0].id);
-  console.log("ANCHORS:", anchors[0].id)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = anchors.map(anchor => document.getElementById(anchor.id));
-      let currentSection = '';
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (window.pageYOffset >= sectionTop - sectionHeight / 2) {
-          currentSection = section.getAttribute('id');
-        }
-      });
-
-      setActiveSection(currentSection);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [anchors]);
-
+export default function Nav() {
   return (
-    <nav className="menu">
-      <ul>
-        {anchors.map((anchor) => (
-          <li key={anchor.id} className={activeSection === anchor.id ? 'active' : ''}>
-            <a href={`#${anchor.id}`}>{anchor.label}</a>
-          </li>
-        ))}
-      </ul>
+    <nav>
+      <Link to="#home">
+        Home
+      </Link>
+      <Link to="#skills">
+        Skills
+      </Link>
+      <Link to="about">
+        About me
+      </Link>
+      <Link to="contact">
+        Contact
+      </Link>
     </nav>
-  );
-};
-
-export default Menu;
+  )
+}
