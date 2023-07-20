@@ -8,10 +8,12 @@ import Nav from "./components/nav"
 function App() {
   return (
     <BrowserRouter>
+      <div className="flex justify-center">
       <Nav/>
       <div className="App">
           <LandPage />
           <Skills/>
+      </div>
       </div>
     </BrowserRouter>
   );

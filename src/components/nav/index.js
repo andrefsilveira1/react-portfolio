@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import "./index.css"
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className='top-nav'>
       <Link to="#home">
         Home
       </Link>
