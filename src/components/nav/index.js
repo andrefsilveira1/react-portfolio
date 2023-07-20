@@ -11,10 +11,13 @@ export default function Nav() {
       <Link to="#skills">
         Skills
       </Link>
-      <Link to="about">
+      <Link to="#projects">
+        Projects
+      </Link>
+      <Link to="#about">
         About me
       </Link>
-      <Link to="contact">
+      <Link to="#contact">
         Contact
       </Link>
     </nav>

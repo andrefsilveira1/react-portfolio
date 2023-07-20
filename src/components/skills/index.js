@@ -15,7 +15,7 @@ export default function Skills() {
                 </ul>
             </section>
 
-            <section className="mb-12" id="section2">
+            <section className="mb-12" id="projects">
                 <h2 className="text-3xl font-bold mb-4">Projects</h2>
                 <div className="grid grid-cols-2 gap-4">
                     <div className="bg-blue-700 p-4 rounded">
@@ -37,8 +37,8 @@ export default function Skills() {
                 </div>
             </section>
 
-            <section className="mb-12" id="section3">
-                <h2 className="text-3xl font-bold mb-4">Projects</h2>
+            <section className="mb-12" id="about">
+                <h2 className="text-3xl font-bold mb-4">About</h2>
                 <div className="grid grid-cols-2 gap-4">
                     <div className="bg-blue-700 p-4 rounded">
                         <h3 className="text-xl font-semibold mb-2">Project 1</h3>
@@ -59,7 +59,7 @@ export default function Skills() {
                 </div>
             </section>
 
-            <section id="section5">
+            <section id="contact">
                 <h2 className="text-3xl font-bold mb-4">Contact</h2>
                 <p className="text-lg">Feel free to reach out to me at freitasandre38@gmail.com</p>
             </section>
