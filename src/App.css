@@ -1,0 +1,13 @@
+
+.transition-colors {
+    transition: background-color 0.5s ease;
+  }
+  
+  .bg-black {
+    background-color: black;
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
