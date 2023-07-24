@@ -1,7 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import LandPage from "./pages/home";
 import Skills from "./components/skills";
-import Nav from "./components/nav"
+import Nav from "./components/nav";
+import "./App.css";
 
 
 function App() {
