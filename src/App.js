@@ -2,7 +2,6 @@ import { BrowserRouter } from "react-router-dom";
 import LandPage from "./pages/home";
 import Skills from "./components/sections";
 import Nav from "./components/nav";
-import "./App.css";
 
 
 function App() {

@@ -7,7 +7,7 @@ export default function Skills() {
     useEffect(() => {
         const handleScroll = () => {
         // Defina um valor limite para mostrar o texto (por exemplo, 300 pixels a partir do topo)
-        const scrollThreshold = 500;
+        const scrollThreshold = 800;
         const shouldShowText = window.scrollY > scrollThreshold;
         setShowText(shouldShowText);
         };
