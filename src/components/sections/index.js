@@ -6,16 +6,11 @@ export default function Skills() {
 
     useEffect(() => {
         const handleScroll = () => {
-        // Defina um valor limite para mostrar o texto (por exemplo, 300 pixels a partir do topo)
         const scrollThreshold = 800;
         const shouldShowText = window.scrollY > scrollThreshold;
         setShowText(shouldShowText);
         };
-
-        // Adicione o evento de "scroll" ao montar o componente
         window.addEventListener('scroll', handleScroll);
-
-        // Lembre-se de remover o evento ao desmontar o componente para evitar vazamento de memória
         return () => {
         window.removeEventListener('scroll', handleScroll);
         };
