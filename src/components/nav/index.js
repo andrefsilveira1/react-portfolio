@@ -12,7 +12,7 @@ export default function Nav({propsValue, onChange}) {
     onChange(!value);
   }
   return (
-    <nav className='top-nav'>
+    <nav className='top-nav shadow'>
       <Link to="#home">
         Home
       </Link>
