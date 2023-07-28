@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaReact } from "react-icons/fa";
 import { BiLogoKubernetes , BiLogoDocker, BiLogoHtml5, BiLogoCss3, BiLogoSpringBoot, BiLogoGoLang, BiLogoTypescript, BiLogoVuejs} from "react-icons/bi";
 import { DiHaskell } from "react-icons/di";
