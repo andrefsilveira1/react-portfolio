@@ -31,7 +31,7 @@ export default function Repositories() {
         <>
             <div>
                 <section className="mb-12" id="projects">
-                    <h2 className="text-3xl font-bold mb-4">Projects</h2>
+                    <h2 className="text-3xl font-bold mb-4">Projectss</h2>
                     <div>
                         {data.length > 0 && data.map((item, index) => (
                             <div className="bg-blue-700 p-4 rounded m-5 shadow" key={index}>
