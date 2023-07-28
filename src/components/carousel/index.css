@@ -1,0 +1,6 @@
+.img-box {
+   width:100%;
+   object-fit:contain;
+   max-height: 700px;
+   object-position:50% 50%;
+}

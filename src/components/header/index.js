@@ -2,7 +2,7 @@ import React from 'react';
 import "./index.css";
 import circle from "./circle.png"
 
-import { FaGithub, FaInstagram, FaLinkedin, BsFillSunFill } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function HomeHeader() {
   return (

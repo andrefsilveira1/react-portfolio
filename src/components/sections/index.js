@@ -1,37 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import "./index.css"
+import Card from '../techs';
 
 export default function Skills() {
     const [showText, setShowText] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-        // Defina um valor limite para mostrar o texto (por exemplo, 300 pixels a partir do topo)
         const scrollThreshold = 800;
         const shouldShowText = window.scrollY > scrollThreshold;
         setShowText(shouldShowText);
         };
-
-        // Adicione o evento de "scroll" ao montar o componente
         window.addEventListener('scroll', handleScroll);
-
-        // Lembre-se de remover o evento ao desmontar o componente para evitar vazamento de memória
         return () => {
         window.removeEventListener('scroll', handleScroll);
         };
     }, []);
     return (
-        <div id="skills" className={`scroll-text ${showText ? 'fade-in' : ''}`}>
+        <div id="skills" className={`scroll-text ${showText ? 'fade-in' : ''}`} >
                 <section className="section1 mb-12" id="section1">
                 <h2 className="text-3xl font-bold mb-4">Skills</h2>
-                <ul className="list-disc pl-6">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                </ul>
+                <p>
+                    At the moment, I'm currently working with Node.js, Svelte, React, Docker, kubernetes, MySQL and Cypress. But also, my skills include:
+                </p>
+                <Card/>
             </section>
 
             <section className="mb-12" id="projects">

@@ -1,0 +1,54 @@
+
+
+.maincontainer {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.back h2 {
+    position: absolute;
+}
+
+.back p {
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+}
+.maincontainer > .front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 100px;
+    height: 100px;
+    
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer > .back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.tech-container {
+  display: flex;
+  margin: 50px;
+}
+

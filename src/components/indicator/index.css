@@ -1,0 +1,18 @@
+.bar {color: #fff;
+top: 0;
+left: 0;
+position: fixed;
+text-align: center;
+padding:2px 0 2px 0;
+background: #3906f3;
+background: -webkit-linear-gradient(
+  to right,
+  #193af5,
+  #4d11f1
+);
+background: linear-gradient(
+  to right,
+  #0024f3,
+  #11aaf1
+);
+}
