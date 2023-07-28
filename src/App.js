@@ -10,6 +10,7 @@ import ReadingIndicator from './components/indicator';
 function App() {
   const [value, setValue] = useState(false);
   const [transitionClass, setTransitionClass] = useState('');
+  const [transitionText, setTransitionText] = useState('');
 
   function handleChangeValue(newValue) {
     setValue(newValue);
@@ -19,6 +20,7 @@ function App() {
     const transitionDelay = 300;
     const timeout = setTimeout(() => {
       setTransitionClass(value ? 'bg-white' : 'bg-black');
+      setTransitionText(value ? 'text-black' : 'text-white');
     }, transitionDelay);
 
     return () => clearTimeout(timeout);
@@ -29,7 +31,7 @@ function App() {
     <ReadingIndicator/>
       <div className={`flex justify-center transition-colors ${transitionClass}`}>
       <Nav value={value} onChange={handleChangeValue}/>
-      <div className="App bg-gray-900 text-white">
+      <div className={`transition-colors ${transitionClass} ${transitionText}`}>
           <LandPage />
           <Skills/>
       </div>

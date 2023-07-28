@@ -6,8 +6,8 @@ import BoxCarousel from '../../components/carousel';
 export default function LandPage() {
   return (
     <>
-      <div id="home" className="text-white font-roboto grid justify-items-center mb-5">
-        <div className="min-h-screen text-white w-3/4 mb-5">
+      <div id="home" className="font-roboto grid justify-items-center mb-5">
+        <div className="min-h-screen w-3/4 mb-5">
           <HomeHeader className="menu" />
           <div className='mt-5'>
             <h1>Hello there!</h1>

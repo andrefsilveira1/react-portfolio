@@ -19,6 +19,9 @@ export default function Skills() {
         <div id="skills" className={`scroll-text ${showText ? 'fade-in' : ''}`}>
                 <section className="section1 mb-12" id="section1">
                 <h2 className="text-3xl font-bold mb-4">Skills</h2>
+                <p>
+                    At the moment, I'm currently working with Node.js, Svelte, React, Docker, kubernetes, MySQL and Cypress. But also, my skills include:
+                </p>
                 <ul className="list-disc pl-6">
                     <li>HTML5</li>
                     <li>CSS3</li>
