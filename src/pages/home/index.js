@@ -3,6 +3,7 @@ import HomeHeader from "../../components/header";
 import Typewriter from './typewriter';
 import BoxCarousel from '../../components/carousel';
 import Skills from '../../components/sections';
+import Repositories from '../../components/repos';
 
 export default function LandPage() {
   return (
@@ -30,6 +31,7 @@ export default function LandPage() {
             <BoxCarousel/>
           </div>
           <Skills/>
+          <Repositories/>
         </div>
       </div>
     </>
