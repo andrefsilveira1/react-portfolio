@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./index.css";
 
 export default function Repositories() {
     const startData = {
@@ -34,10 +35,12 @@ export default function Repositories() {
                     <h2 className="text-3xl font-bold mb-4">Projects</h2>
                     <div>
                         {data.length > 0 && data.map((item, index) => (
-                            <div className="bg-blue-700 p-4 rounded m-5 shadow" key={index}>
-                                <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
-                                <p>{item.description}</p>
-                            </div>
+                            <a target='_blank' href={item.svn_url} className='no-underline text-black'>
+                                <div className="repo bg-gray-100 p-4 rounded m-5 shadow" key={index}>
+                                    <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
+                                    <p>{item.description}</p>
+                                </div>
+                            </a>
                         ))}
                     </div>
                 </section>
