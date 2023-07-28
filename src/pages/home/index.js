@@ -2,12 +2,13 @@ import React from 'react';
 import HomeHeader from "../../components/header";
 import Typewriter from './typewriter';
 import BoxCarousel from '../../components/carousel';
+import Skills from '../../components/sections';
 
 export default function LandPage() {
   return (
     <>
       <div id="home" className="font-roboto grid justify-items-center mb-5">
-        <div className="min-h-screen w-3/4 mb-5">
+        <div className="min-h-screen w-2/4 mb-5 shadow p-3">
           <HomeHeader className="menu" />
           <div className='mt-5'>
             <h1>Hello there!</h1>
@@ -28,6 +29,7 @@ export default function LandPage() {
           <div className='d-flex justify-center'>
             <BoxCarousel/>
           </div>
+          <Skills/>
         </div>
       </div>
     </>

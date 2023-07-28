@@ -33,7 +33,6 @@ function App() {
       <Nav value={value} onChange={handleChangeValue}/>
       <div className={`transition-colors ${transitionClass} ${transitionText}`}>
           <LandPage />
-          <Skills/>
       </div>
       </div>
     </BrowserRouter>
