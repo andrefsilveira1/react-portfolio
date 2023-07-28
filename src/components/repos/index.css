@@ -1,0 +1,7 @@
+.repo {
+    transition: transform 0.4s ease; /* Add a transition for smooth movement */
+  }
+  
+  .repo:hover {
+    transform: translateY(-5px); /* Move the element 5 pixels up on hover */
+  }
