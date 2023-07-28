@@ -21,6 +21,10 @@ export default function LandPage() {
               the most diverses groups, since web, embedded systems, infraestructure, algorithms, cybersecurity and so on.
             </p>
           </div>
+            <h4>My life outside computers</h4>
+            <p>
+              Even been the 'Computer guy', I never like stay inside home every single day
+            </p>
           <div className='d-flex justify-center'>
             <BoxCarousel/>
           </div>
