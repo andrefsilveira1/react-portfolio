@@ -1,41 +1,120 @@
 import React, { useState } from "react";
 import { FaReact } from "react-icons/fa";
+import { BiLogoKubernetes , BiLogoDocker, BiLogoHtml5, BiLogoCss3, BiLogoSpringBoot, BiLogoGoLang, BiLogoTypescript, BiLogoVuejs} from "react-icons/bi";
+import { DiHaskell } from "react-icons/di";
 import "./index.css"
 
 const Card = () => {
 
     return (
-        <div>
+        <div className="tech-container d-flex justify-center">
             <div className="maincontainer">
                 <div className="back">
-                    <h2>Copywriting</h2>
-                    <p>Introduction to Copywriting’ workshop focuses on the theory and processes of professional copywriting as applied to persuasion, reasoning, and rhetoric. This workshop is best-suited to learning how to write and think about consumer-driven functions.</p>
+                    <h4>React.js</h4>
+                    <p>3 years of experience</p>
                 </div>
                 <div className="front">
                     <div className="image">
-                        <h2>Copywriting</h2>
+                        <FaReact size={80} />
                     </div>
                 </div>
             </div>
             <div className="maincontainer">
                 <div className="back">
-                    <h2>Content Marketing</h2>
-                    <p>Introduction to Content Marketing workshop focuses on building content frameworks that are designed for and directed at communication engagement. This interdisciplinary workshop is best-suited to learning visual and written communication strategies.</p>
+                    <h4>Vue</h4>
+                    <p>1 year of experience</p>
                 </div>
                 <div className="front">
                     <div className="image">
-                        <h2>Content Marketing</h2>
+                        <BiLogoVuejs size={80}/>
                     </div>
                 </div>
             </div>
             <div className="maincontainer">
                 <div className="back">
-                    <h2>Web Writing</h2>
-                    <p>Introduction to Web-Writing workshop focuses on building creative and systemic digital content through online user experiences that benefit people and robots. This workshop is best-suited to creating content for digital platforms and devices — websites, mobile, game consoles, and virtual reality engines.</p>
+                    <h4>HTML</h4>
+                    <p>4 years of experience</p>
                 </div>
                 <div className="front">
                     <div className="image">
-                        <h2>Web Writing</h2>
+                        <BiLogoHtml5 size={80}/>
+                    </div>
+                </div>
+            </div>
+            <div className="maincontainer">
+                <div className="back">
+                    <h4>CSS</h4>
+                    <p>4 years of experience</p>
+                </div>
+                <div className="front">
+                    <div className="image">
+                        <BiLogoCss3 size={80}/>
+                    </div>
+                </div>
+            </div>
+            <div className="maincontainer">
+                <div className="back">
+                    <h5>kubernetes</h5>
+                    <p>1 year of experience</p>
+                </div>
+                <div className="front">
+                    <div className="image">
+                        <BiLogoKubernetes size={80}/>
+                    </div>
+                </div>
+            </div>
+            <div className="maincontainer">
+                <div className="back">
+                    <h4>Docker</h4>
+                    <p>2 years of experience</p>
+                </div>
+                <div className="front">
+                    <div className="image">
+                        <BiLogoDocker size={80}/>
+                    </div>
+                </div>
+            </div>
+            <div className="maincontainer">
+                <div className="back">
+                    <h4>Spring</h4>
+                    <p>1 year of experience</p>
+                </div>
+                <div className="front">
+                    <div className="image">
+                        <BiLogoSpringBoot size={80}/>
+                    </div>
+                </div>
+            </div>
+            <div className="maincontainer">
+                <div className="back">
+                    <h4>Go</h4>
+                    <p>2 years of experience</p>
+                </div>
+                <div className="front">
+                    <div className="image">
+                        <BiLogoGoLang size={80}/>
+                    </div>
+                </div>
+            </div>
+            <div className="maincontainer">
+                <div className="back">
+                    <h5>Typescript</h5>
+                    <p>3 years of experience</p>
+                </div>
+                <div className="front">
+                    <div className="image">
+                        <BiLogoTypescript size={80}/>
+                    </div>
+                </div>
+            </div>
+            <div className="maincontainer">
+                <div className="back">
+                    <h4>Haskell</h4>
+                    <p>1 year of experience</p>
+                </div>
+                <div className="front">
+                    <div className="image">
+                        <DiHaskell size={80}/>
                     </div>
                 </div>
             </div>
