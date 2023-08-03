@@ -12,10 +12,10 @@ const Nav = ({ propsValue, onChange }) => {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-black shadow-md md:shadow-none">
+    <nav className="fixed top-0 left-0 w-full bg-white md:shadow">
       <div className="container mx-auto px-4 py-2 md:py-4 md:flex md:items-center md:justify-between">
         <div className="flex items-center">
-          <Link to="#home" className="nav-link mr-4 text-blue-500 md:mr-8">
+          <Link to="#home" className="mr-4 text-blue-500 md:mr-8 nav-link">
             Home
           </Link>
           <Link to="#skills" className="nav-link mr-4 text-blue-500 md:mr-8">
