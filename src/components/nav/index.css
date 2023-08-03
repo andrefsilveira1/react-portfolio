@@ -3,11 +3,9 @@
 /* index.css */
 .nav-link {
   text-decoration: none;
-  color: #3B82F6; /* Set the default link color */
   border-radius: 5px;
 }
 
 .nav-link:hover {
-  background-color: blue;
   color: white;
 }
