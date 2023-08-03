@@ -1,9 +1,9 @@
 
-a {
-  text-decoration: none;
-
-}
 
 nav {
+  text-decoration: none;
   z-index: 1;
+}
+.nav-link {
+  text-decoration: none;
 }

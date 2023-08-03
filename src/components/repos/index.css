@@ -5,3 +5,7 @@
   .repo:hover {
     transform: translateY(-5px); /* Move the element 5 pixels up on hover */
   }
+ div {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+ }

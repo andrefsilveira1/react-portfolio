@@ -15,19 +15,19 @@ const Nav = ({ propsValue, onChange }) => {
     <nav className="fixed top-0 left-0 w-full bg-white dark:bg-black shadow-md md:shadow-none">
       <div className="container mx-auto px-4 py-2 md:py-4 md:flex md:items-center md:justify-between">
         <div className="flex items-center">
-          <Link to="#home" className="mr-4 text-blue-500 md:mr-8 ">
+          <Link to="#home" className="nav-link mr-4 text-blue-500 md:mr-8">
             Home
           </Link>
-          <Link to="#skills" className="mr-4 text-blue-500 md:mr-8 ">
+          <Link to="#skills" className="nav-link mr-4 text-blue-500 md:mr-8">
             Skills
           </Link>
-          <Link to="#projects" className="mr-4 text-blue-500 md:mr-8 ">
+          <Link to="#projects" className="nav-link mr-4 text-blue-500 md:mr-8">
             Projects
           </Link>
-          <Link to="#about" className="mr-4 text-blue-500 md:mr-8 ">
+          <Link to="#about" className="nav-link mr-4 text-blue-500 md:mr-8">
             About me
           </Link>
-          <Link to="#contact" className="mr-4 text-blue-500 md:mr-8 ">
+          <Link to="#contact" className="nav-link mr-4 text-blue-500 md:mr-8">
             Contact
           </Link>
         </div>
