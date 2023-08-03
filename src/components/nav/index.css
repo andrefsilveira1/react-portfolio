@@ -1,9 +1,13 @@
 
-a {
-  text-decoration: none;
 
+/* index.css */
+.nav-link {
+  text-decoration: none;
+  color: #3B82F6; /* Set the default link color */
+  border-radius: 5px;
 }
 
-nav {
-  z-index: 1;
+.nav-link:hover {
+  background-color: blue;
+  color: white;
 }
