@@ -1,16 +1,30 @@
-import React from 'react';
+import {React, useEffect, useState} from 'react';
 import "./index.css";
-import circle from "./circle.png"
 
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
+
+
 export default function HomeHeader() {
+
+  const [avatar, setAvatar] = useState('');
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/andrefsilveira1")
+        .then((res) => res.json())
+        .then(
+            (result) => {
+                console.log("header:", result)
+                setAvatar(result.avatar_url)
+            }, (error) => { console.log("err:", error) }
+        )
+}, [])
   return (
     <>
       <nav className='menu'>
         <input type="checkbox" className="menu-open" name="menu-open" id="menu-open" />
         <label className="menu-open-button" htmlFor="menu-open">
-        <img alt="Logo message" src={circle} className='menu-open-button'/>
+        <img alt="new logo " src={avatar}  className='menu-open-button'/>
         </label>
 
         <a href="https://github.com/andrefsilveira1" rel="noreferrer" target='_blank' className="menu-item"> <FaGithub size={80} /> </a>
